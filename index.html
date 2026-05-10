@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<header>
+    <h1>Campus Info Hub</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="pages/library.html">Biblioteca</a>
+        <a href="pages/cafeteria.html">Cantina</a>
+        <a href="pages/events.html">Evenimente</a>
+
+        <!-- absolute URL -->
+        <a href="https://www.upb.ro" target="_blank">Site UPB</a>
+
+        <!-- fragment link -->
+        <a href="#schedule">Jump to schedule</a>
+    </nav>
+</header>
+
+<main>
+
+<section>
+    <h2>Bine ai venit!</h2>
+    <p>
+        Aceasta aplicatie ofera informatii despre resursele campusului.
+    </p>
+</section>
+
+<section>
+    <h2>Lista resurselor</h2>
+    <button onclick="filterStudy()">Doar locuri de studiu</button>
+
+    <div id="resource-list"></div>
+</section>
+<div id="resource-list"></div>
+<section id="schedule">
+    <h2>Program campus</h2>
+
+    <table>
+        <tr>
+            <th>Locatie</th>
+            <th>Program</th>
+        </tr>
+
+        <tr>
+            <td>Biblioteca</td>
+            <td>08:00 - 20:00</td>
+        </tr>
+
+        <tr>
+            <td>Cantina</td>
+            <td>09:00 - 18:00</td>
+        </tr>
+    </table>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
